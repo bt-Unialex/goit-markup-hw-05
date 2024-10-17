@@ -77,10 +77,13 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+}
+
+.header .logo {
   margin-right: 76px;
 }
 
-header .logo-secondpart {
+.header .logo-secondpart {
   color: #2e2f42;
 }
 
