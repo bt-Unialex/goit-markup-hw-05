@@ -445,7 +445,7 @@
   </footer>
 </body>
 <!----------------------------MODAL-------------------------------------------->
-<div class="modal-overlay is-open">
+<div class="modal-overlay "><!-- is-open -->
   <form class="modal" name="modal-form" autocomplete="off">
     <button class="modal-closebtn" type="button">
       <svg width="8" height="8">
@@ -453,12 +453,28 @@
       </svg>
     </button>
     <p class="modal-title">Leave your contacts and we will call you back</p>
-    <label class="modal-label" for="username">Name</label><input class="modal-input" type="text" id="username"
-      name="username" autocomplete="off" autofocus />
-    <label class="modal-label" for="phone">Phone</label><input class="modal-input" type="tel" id="phone" name="phone"
-      autocomplete="off" />
-    <label class="modal-label" for="usermail">Email</label><input class="modal-input" type="email" id="usermail"
-      name="usermail" />
+    <label class="modal-label" for="username">Name</label>
+    <div class="modal-inputbox">
+      <input class="modal-input" type="text" id="username" name="username" autocomplete="off" autofocus />
+      <svg class="modal-icon" width="18" height="18">
+        <use href="./images/icons.svg#icon-person"></use>
+      </svg>
+    </div>
+    <label class="modal-label" for="phone">Phone</label>
+    <div class="modal-inputbox">
+      <input class="modal-input" type="tel" id="phone" name="phone" autocomplete="off" />
+      <svg class="modal-icon" width="18" height="18">
+        <use href="./images/icons.svg#icon-phone"></use>
+      </svg>
+    </div>
+    <label class="modal-label" for="usermail">Email</label>
+    <div class="modal-inputbox">
+      <input class="modal-input" type="email" id="usermail" name="usermail" />
+      <svg class="modal-icon" width="18" height="18">
+        <use href="./images/icons.svg#icon-mail"></use>
+      </svg>
+    </div>
+
     <label class="modal-label" for="modal-comment">Comment</label>
     <textarea class="modal-comment modal-input" rows="3" name="comment-text" id="modal-comment"
       placeholder="Text input"></textarea>
