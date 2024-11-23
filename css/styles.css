@@ -522,12 +522,14 @@ footer .logo-secondpart {
 
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 
 .modal {
@@ -567,6 +569,7 @@ footer .logo-secondpart {
 .modal-closebtn:hover,
 .modal-closebtn:focus {
   border: none;
+  outline: transparent;
   background-color: #404bbf;
 }
 
@@ -625,7 +628,6 @@ footer .logo-secondpart {
   outline: transparent;
   line-height: 18px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /*transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
 .modal-divinput .modal-input {
@@ -654,7 +656,6 @@ footer .logo-secondpart {
 
 .modal-input:active,
 .modal-input:focus {
-  /*outline: 1px solid #4d5ae5;*/
   border-color: #4D5AE5;
 }
 
@@ -675,6 +676,7 @@ footer .logo-secondpart {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  user-select: none;
   color: #8e8f99;
 }
 
@@ -689,6 +691,11 @@ footer .logo-secondpart {
   fill: transparent;
   margin-right: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-ppchk:focus-visible+.modal-pplabel>.modal-ppchkface {
+  outline: 1px solid #404bbf;
+  outline-offset: 2px;
 }
 
 .modal-ppchk:checked+.modal-pplabel>.modal-ppchkface {
